@@ -15,7 +15,7 @@ public class Character {
         this.x = x;
         this.y = y;
         // IMAGE_NEEDED_1 for the character sprite
-        characterBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.IMAGE_NEEDED_1);
+        characterBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.iu_example.png);
     }
 
     public void update(Joystick joystick) {
