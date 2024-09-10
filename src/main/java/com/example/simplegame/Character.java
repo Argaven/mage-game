@@ -1,5 +1,4 @@
 // Character.java
-// testing
 
 package com.example.simplegame;
 
