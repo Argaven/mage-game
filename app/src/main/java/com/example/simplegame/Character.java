@@ -6,16 +6,19 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.content.Context;
 
 public class Character {
     private float x, y;
+    private Context context;
     private Bitmap characterBitmap;
 
-    public Character(float x, float y) {
+    public Character(float x, float y, Context context) {
+        this.context = context;
         this.x = x;
         this.y = y;
         // IMAGE_NEEDED_1 for the character sprite
-        characterBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.iu_example.png);
+        characterBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.iu_example);
     }
 
     public void update(Joystick joystick) {

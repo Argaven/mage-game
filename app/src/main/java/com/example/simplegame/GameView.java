@@ -24,7 +24,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
         // Initialize the joystick and character
         joystick = new Joystick(150, getHeight() - 150, 100, 50);
-        character = new Character(getWidth() / 2, getHeight() / 2);
+        character = new Character(getWidth() / 2, getHeight() / 2, context);
 
         setFocusable(true);
     }
